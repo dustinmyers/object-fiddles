@@ -29,10 +29,8 @@ var favoriteThings = {
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
-var car = {
-  favorite: 'Corvette',
-  brand: 'Chevy'
-};
+favoriteThings.car = 'Corvette';
+favoriteThings.brand = 'Nike';
 
 //Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'.
 
@@ -124,8 +122,12 @@ var loop = function(album) {
 
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
-  //Code Here
+var states = {
+  alabama: 907308,
+  idaho: 3984760,
+  utah: 09380985307,
 
+}
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
   //Code Here
