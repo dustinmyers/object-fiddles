@@ -125,13 +125,19 @@ var loop = function(album) {
 var states = {
   alabama: 907308,
   idaho: 3984760,
-  utah: 09380985307,
-
+  utah: 5307,
+  nevada: 7530,
+  florida: 7028708
 }
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
-  //Code Here
-
+var popCheck = function(states) {
+  for(var key in states) {
+    if (states[key] > 30000) {
+      alert(key);
+    }
+  }
+}
 
 
 
@@ -151,12 +157,22 @@ var user = {
 /*Above you're given a user object. Loop through the user object checking to make sure
 that each value is truthy. If it's not truthy, remove it from the object. */
 
-  //Code Here
+var truthyFunction = function(user) {
+  for (var key in user) {
+    if (!user[key]) {
+      delete user[key];
+    }
+  }
+}
 
+truthyFunction(user)
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
-  //Code Here
+user.name = 'Dustin Myers';
+user.pwHash = '0b9n8ydkjfhg';
+user.username = 'snowkid314';
 
+user
 
 
 
@@ -179,12 +195,11 @@ var user = {
 //Let's say I, the user, decided to change my name and email address to the following
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
-  //Code Here
-
+user.name = 'Tyler S. McGinnis';
+user.email = 'tyler.mcginnis@devmounta.in'
 //Now call the sayName method that's on the user object which will alert the users email
 
-  //Code Here
-
+user.sayName(user.email)
 
 
 
